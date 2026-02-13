@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Día del Amor - Para mi Esposa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Lluvia de corazones -->
+    <div id="hearts-container"></div>
+
+    <!-- Reproductor de música -->
+    <div id="music-player" class="music-player">
+        <button id="playPauseBtn" class="music-btn">
+            <span id="playIcon">⏸</span>
+        </button>
+        <button id="muteBtn" class="music-btn">
+            <span id="muteIcon">🔊</span>
+        </button>
+        <button id="closePlayerBtn" class="music-btn">✕</button>
+    </div>
+    <button id="openPlayerBtn" class="music-btn open-player hidden">🎵</button>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        
+        <div class="hero-content">
+            <div class="heart-float">
+                <svg class="heart-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+            </div>
+
+            <!-- TÍTULO CON CORAZÓN FLECHADO Y CUPIDO A LOS LADOS -->
+            <div class="title-container">
+                <!-- Corazón flechado izquierdo -->
+                <div class="side-decoration right">
+                    <div class="heart-arrowed">
+                        <svg class="heart-arrowed-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                        <span class="arrow">➹</span>
+                    </div>
+                </div>
+
+                <h1 class="title gold-gradient">Feliz Día del Amor</h1>
+
+                <!-- Corazón flechado derecho -->
+                <div class="side-decoration right">
+                    <div class="heart-arrowed">
+                        <svg class="heart-arrowed-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                        <span class="arrow">➹</span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="subtitle">Una dedicatoria especial para la mujer más maravillosa del mundo</p>
+
+            <div class="badge pulse">
+                <svg class="heart-small" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+                <span>Para mi esposa</span>
+                <svg class="heart-small" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-dot"></div>
+        </div>
+    </section>
+
+    <!-- Divisor -->
+    <div class="divider">
+        <div class="line"></div>
+        <svg class="heart-divider" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+        <div class="line"></div>
+    </div>
+
+    <!-- Mensajes Emotivos -->
+    <section class="messages">
+        <div class="container">
+            <div class="messages-header fade-in">
+                <svg class="header-heart" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+                <h2 class="messages-title gold-gradient">Palabras del Corazón</h2>
+            </div>
+
+            <div class="messages-grid">
+                <div class="message-card" style="animation-delay: 0s">
+                    <svg class="card-heart" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                    <h3 class="rose-gradient">Mi Amor Eterno</h3>
+                    <p>Cada día a tu lado es un regalo que atesoro en lo más profundo de mi corazón. Tu sonrisa ilumina mis mañanas y tu amor da sentido a mi vida.</p>
+                </div>
+
+                <div class="message-card" style="animation-delay: 0.2s">
+                    <svg class="card-heart" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                    <h3 class="rose-gradient">Eres Mi Todo</h3>
+                    <p>En tus ojos encontré mi hogar, en tus brazos mi refugio, y en tu corazón el amor que siempre soñé.</p>
+                </div>
+
+                <div class="message-card" style="animation-delay: 0.4s">
+                    <svg class="card-heart" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                    <h3 class="rose-gradient">Gracias por Existir</h3>
+                    <p>Gracias por ser tú, por tu paciencia, tu ternura y por hacer de mi vida una hermosa historia de amor.</p>
+                </div>
+            </div>
+
+            <!-- NUEVO MENSAJE EMOTIVO EXTRA -->
+            <div class="extra-message fade-in">
+                <div class="extra-message-content">
+                    <svg class="extra-heart" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                    <h3 class="extra-title gold-gradient">Para la Mujer que Ilumina mis Días</h3>
+                    <p class="extra-text">
+                        "Eres la razón por la que creo en el amor verdadero, la dueña de mis sueños y la compañera de mi vida. 
+                        Cada momento a tu lado es un tesoro que guardo en el cofre de mi corazón. 
+                        Prometo amarte hoy, mañana y siempre estemos o no juntos, casados o divorciados, porque en ti encontré lo que nunca supe que buscaba. 
+                        Eres mi presente, mi futuro y mi eternidad. Te amo más allá de las palabras, más allá del tiempo, 
+                        más allá de todo lo que existe.
+                        A pesar de la distancia que hoy existe entre nosotros, quiero que sepas que te amo como el primer día. El tiempo, las circunstancias y los errores no han podido borrar todo lo que significas para mí. Hemos pasado momentos difíciles, nos hemos causado dolor y heridas que aún pesan… pero también sé que en nuestros corazones sigue viva esa llama que un día encendimos juntos, una llama que jamás se ha apagado del todo.
+                        Quiero darte gracias desde lo más profundo de mi alma por el regalo más hermoso que la vida me ha dado: nuestros tres hijos, Adrián, Liham y Loani. Ellos son el reflejo de lo que fuimos, de lo que somos y del amor que siempre nos unirá. Son nuestro orgullo, nuestra fuerza y el pilar que siempre nos mantendrá conectados sin importar el camino que tome la vida.
+                        Hoy, en este Día de San Valentín, solo deseo que tengas un día lleno de paz, sonrisas y momentos bonitos. Que recuerdes que siempre ocuparás un lugar especial en mi corazón. Más allá de todo, quiero que sepas que mi cariño por ti es eterno y que te amaré por siempre, porque hay amores que el tiempo no borra y el alma jamás olvida.
+                        Feliz Día de San Valentín, Amor Eterno❤️"
+                    </p>
+                    <div class="extra-signature">Siempre tuyo ❤️</div>
+                    <div class="extra-signature">14 de Febrero de 2026</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divisor -->
+    <div class="divider">
+        <div class="line"></div>
+        <svg class="heart-divider" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+        <div class="line"></div>
+    </div>
+
+    <!-- Carrusel de Fotos -->
+    <section class="carousel-section">
+        <h2 class="carousel-title rose-gradient">“Porque amarte fue, es y será parte de mi vida”</h2>
+        
+        <div class="carousel-container">
+            <div class="carousel">
+                <!-- TUS 12 FOTOS -->
+                <div class="carousel-slide active">
+                    <div class="image-container">
+                        <img src="assets/photo1.jpg" alt="Foto 1" onerror="this.src='https://via.placeholder.com/800x400/ff69b4/ffffff?text=Foto+1'">
+                    </div>
+                    <div class="slide-caption">
+                        <p>Amor</p>
+                        <span>2023</span>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="image-container">
+                        <img src="assets/photo2.jpg" alt="Foto 2" onerror="this.src='https://via.placeholder.com/800x400/ffb6c1/ffffff?text=Foto+2'">
+                    </div>
+                    <div class="slide-caption">
+                        <p>Hasta viejitos</p>
+                        <span>2023</span>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="image-container">
+                        <img src="assets/photo3.jpg" alt="Foto 3" onerror="this.src='https://via.placeholder.com/800x400/ffa07a/ffffff?text=Foto+3'">
+                    </div>
+                    <div class="slide-caption">
+                        <p>Con dueño hasta la muerte</p>
+                        <span>2023</span>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="image-container">
+                        <img src="assets/photo4.jpg" alt="Foto 4" onerror="this.src='https://via.placeholder.com/800x400/ff69b4/ffffff?text=Foto+4'">
+                    </div>
+                    <div class="slide-caption">
+                        <p>Estas alli</p>
+                        <span>2023</span>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="image-container">
+                        <img src="assets/photo5.jpg" alt="Foto 5" onerror="this.src='https://via.placeholder.com/800x400/ffb6c1/ffffff?text=Foto+5'">
+                    </div>
+                    <div class="slide-caption">
+                        <p>Siempre juntos</p>
+                        <span>2024</span>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="image-container">
+                        <img src="assets/photo6.jpg" alt="Foto 6" onerror="this.src='https://via.placeholder.com/800x400/ffa07a/ffffff?text=Foto+6'">
+                    </div>
+                    <div class="slide-caption">
+                        <p>Asi me digas perro</p>
+                        <span>2024</span>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="image-container">
+                        <img src="assets/photo7.jpg" alt="Foto 7" onerror="this.src='https://via.placeholder.com/800x400/ff69b4/ffffff?text=Foto+7'">
+                    </div>
+                    <div class="slide-caption">
+                        <p>Feliz Día</p>
+                        <span>2024</span>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="image-container">
+                        <img src="assets/photo8.jpg" alt="Foto 8" onerror="this.src='https://via.placeholder.com/800x400/ffb6c1/ffffff?text=Foto+8'">
+                    </div>
+                    <div class="slide-caption">
+                        <p>Siempre juntos</p>
+                        <span>2024</span>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="image-container">
+                        <img src="assets/photo9.jpg" alt="Foto 9" onerror="this.src='https://via.placeholder.com/800x400/ffa07a/ffffff?text=Foto+9'">
+                    </div>
+                    <div class="slide-caption">
+                        <p>Mi Paty for ever</p>
+                        <span>2024</span>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="image-container">
+                        <img src="assets/photo10.jpg" alt="Foto 10" onerror="this.src='https://via.placeholder.com/800x400/ff69b4/ffffff?text=Foto+10'">
+                    </div>
+                    <div class="slide-caption">
+                        <p>Eres mi todo</p>
+                        <span>2024</span>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="image-container">
+                        <img src="assets/photo11.jpg" alt="Foto 11" onerror="this.src='https://via.placeholder.com/800x400/ffb6c1/ffffff?text=Foto+11'">
+                    </div>
+                    <div class="slide-caption">
+                        <p>Te amo</p>
+                        <span>2024</span>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="image-container">
+                        <img src="assets/photo12.jpg" alt="Foto 12" onerror="this.src='https://via.placeholder.com/800x400/ffa07a/ffffff?text=Foto+12'">
+                    </div>
+                    <div class="slide-caption">
+                        <p>Para siempre</p>
+                        <span>2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-btn prev">❮</button>
+            <button class="carousel-btn next">❯</button>
+
+            <div class="carousel-dots"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p class="footer-text rose-gradient">❤️Con todo mi amor, para siempre tuyo ❤️</p>
+        <p class="footer-text rose-gradient">“Elaborado por tu futuro Ing. en Sistemas Luis Samaniego; porque cuando el amor y la tecnología se unen, las ideas cobran vida y se transforman en algo que realmente nos representa.” </p>
+    </footer>
+
+    <!-- Audio con TU CANCIÓN -->
+    <audio id="bg-music" loop>
+        <source src="assets/Axel - Amo (Videoclip).mp3" type="audio/mpeg">
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
